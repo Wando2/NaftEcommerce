@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rmHG4Etz8AmzlShC13qDsrmAQqL08pclJ9b6UNRwZZHF0tNgNcDCxKATl+mfMpOERo3HMTPmhZoDQHsXb5Prsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MegaJ\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
