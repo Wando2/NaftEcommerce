@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {}
+    "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {
+    "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
         "projectName": "Naft.Domain",
-        "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+        "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
         "packagesPath": "C:\\Users\\MegaJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\obj\\",
+        "outputPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MegaJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Flunt": {
               "target": "Package",
               "version": "[2.0.5, )"
+            },
+            "SecureIdentity": {
+              "target": "Package",
+              "version": "[1.0.4, )"
             }
           },
           "imports": [

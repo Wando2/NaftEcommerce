@@ -1,6 +1,6 @@
 ﻿namespace Naft.Domain.Entities;
 
-public class Transaction
+public class Order
 {
     
 }

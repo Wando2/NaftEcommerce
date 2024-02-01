@@ -1,6 +1,6 @@
 ﻿using Flunt.Validations;
 
-namespace Naft.Domain.Entities;
+namespace Naft.Domain.ValueObjects;
 
 public class Name : ValueObject
 {

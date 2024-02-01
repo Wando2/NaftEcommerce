@@ -1,6 +1,6 @@
 ﻿using Flunt.Notifications;
 
-namespace Naft.Domain.Entities;
+namespace Naft.Domain.ValueObjects;
 
 public abstract class ValueObject : Notifiable<Notification>
 {

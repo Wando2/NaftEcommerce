@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rmHG4Etz8AmzlShC13qDsrmAQqL08pclJ9b6UNRwZZHF0tNgNcDCxKATl+mfMpOERo3HMTPmhZoDQHsXb5Prsg==",
+  "dgSpecHash": "eJsSjE0c0zEt//5MtFfXh9KawT7emssps+e4Ke/gpnbpRGI/T80PBeOdm85xF284s0YXKnj7MLjrG5XVK/6Wjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+  "projectFilePath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MegaJ\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+    "C:\\Users\\MegaJ\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\MegaJ\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }

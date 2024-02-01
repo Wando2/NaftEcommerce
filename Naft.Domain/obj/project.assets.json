@@ -10,6 +10,15 @@
         "runtime": {
           "lib/netstandard2.0/Flunt.dll": {}
         }
+      },
+      "SecureIdentity/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        }
       }
     }
   },
@@ -26,11 +35,24 @@
         "icon.png",
         "lib/netstandard2.0/Flunt.dll"
       ]
+    },
+    "SecureIdentity/1.0.4": {
+      "sha512": "/s0TMYeHuLXFh2nI337IFGL2E3FJU+o20W4e52muxbWl5BPefUlmEPBTwWuCq3NczwWhbes5GDC6kDWYBrhLaQ==",
+      "type": "package",
+      "path": "secureidentity/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/SecureIdentity.dll",
+        "secureidentity.1.0.4.nupkg.sha512",
+        "secureidentity.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Flunt >= 2.0.5"
+      "Flunt >= 2.0.5",
+      "SecureIdentity >= 1.0.4"
     ]
   },
   "packageFolders": {
@@ -39,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
       "projectName": "Naft.Domain",
-      "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+      "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
       "packagesPath": "C:\\Users\\MegaJ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\Visual Studio Projects\\NaftEcommerce\\Naft.Domain\\obj\\",
+      "outputPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MegaJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,6 +97,10 @@
           "Flunt": {
             "target": "Package",
             "version": "[2.0.5, )"
+          },
+          "SecureIdentity": {
+            "target": "Package",
+            "version": "[1.0.4, )"
           }
         },
         "imports": [

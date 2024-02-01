@@ -1,6 +1,6 @@
 ﻿using Flunt.Notifications;
 
-namespace Naft.Domain.Entities.Interfaces;
+namespace Naft.Domain.Entities;
 
 public abstract class Entity : Notifiable<Notification>
 {
