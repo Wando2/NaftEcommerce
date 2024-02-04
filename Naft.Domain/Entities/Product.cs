@@ -15,6 +15,7 @@ public class Product : Entity
         Image = image;
         User = user;
         _categories = new List<Category>();
+        Active = true;
         
         
         AddNotifications(title, description, price, quantity, image, user);
@@ -24,6 +25,8 @@ public class Product : Entity
     public Description Description { get; private set; }
     public Price Price { get; private set; }
     public Quantity Quantity { get; private set; }
+    
+    public bool Active { get; private set; }
     public Image Image { get; private set; }
     public User User { get; private set; }
     public IEnumerable<Category> Categories => _categories;
