@@ -18,6 +18,10 @@ public class Product : Entity
         Active = true;
         
         
+        
+        
+        
+        
         AddNotifications(title, description, price, quantity, image, user);
     }
     
