@@ -7,16 +7,16 @@ namespace Naft.Domain.Commands;
 
 public class CreateOrderCommand :Notifiable<Notification>, ICommand, ICommandResult
 {
-    public CreateOrderCommand(User buyer, User seller, IList<OrderItem> items)
+    public CreateOrderCommand(Guid buyerId,Guid sellerId, IList<OrderItem> items)
     {
-        Buyer = buyer;
-        Seller = seller;
+        BuyerId = buyerId;
+        SellerId = sellerId;
         Items = items;
     }
     
    
-    public User Buyer { get; private set; }
-    public User Seller { get; private  set; }
+    public Guid BuyerId { get; private set; }
+    public Guid SellerId { get; private set; }
     public IList<OrderItem> Items { get; private set; }
     
  
@@ -25,8 +25,8 @@ public class CreateOrderCommand :Notifiable<Notification>, ICommand, ICommandRes
     {
         AddNotifications(new Contract<Order>()
             .Requires()
-            .IsNotNull(Buyer, "Buyer", "O comprador não pode ser nulo")
-            .IsNotNull(Seller, "Seller", "O vendedor não pode ser nulo")
+            .IsNotNull(BuyerId, "BuyerId", "O comprador não pode ser nulo")
+            .IsNotNull(SellerId, "SellerId", "O vendedor não pode ser nulo")
             .IsGreaterThan(Items.Count, 0, "Items", "A lista de produtos não pode ser vazia")
         );
     }

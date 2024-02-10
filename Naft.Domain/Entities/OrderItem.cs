@@ -34,7 +34,7 @@ public class OrderItem : Entity
     }
     
     public Product Product { get; private set; }
-    private int Quantity { get;  set; }
+    public int Quantity { get;  set; }
     public decimal Price { get; private set; }
     
     
