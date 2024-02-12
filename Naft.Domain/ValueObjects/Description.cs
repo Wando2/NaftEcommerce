@@ -7,6 +7,13 @@ public class Description : ValueObject
 {
     public Description(string description)
     {
+        AddNotifications(new Contract<Description>()
+            .IsNotNullOrEmpty(description,"Description.DescriptionText", "A descrição é obrigatória")
+        );
+        
+        if (!IsValid)
+            return;
+        
         DescriptionText = description;
 
         AddNotifications(new Contract<Notification>()

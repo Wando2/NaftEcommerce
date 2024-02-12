@@ -6,6 +6,15 @@ public class Name : ValueObject
 {
     public Name(string firstName, string lastName)
     {
+        AddNotifications(new Contract<Name>()
+            .IsNotNullOrEmpty(firstName, "Name.firstName", "O nome é obrigatório")
+            .IsNotNullOrEmpty(lastName, "Name.lastName", "O sobrenome é obrigatório")
+            
+        );
+        
+        if (!IsValid)
+            return;
+        
         FirstName = firstName;
         LastName = lastName;
         

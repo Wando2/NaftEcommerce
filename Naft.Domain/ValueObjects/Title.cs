@@ -7,6 +7,13 @@ public class Title : ValueObject
 {
     public Title(string title) 
     {
+        AddNotifications(new Contract<Title>()
+            .IsNotNullOrEmpty(title,"Title.TitleName", "O título é obrigatório)")
+        );
+        
+        if (!IsValid)
+            return;
+        
         TitleName = title;
         
         AddNotifications(new Contract<Notification>()

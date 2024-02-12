@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Domain", "Naft.Domain\Naft.Domain.csproj", "{C8C8DFEA-D1BA-40A4-9E1C-84670D616C8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Tests", "Naft.Tests\Naft.Tests.csproj", "{5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{C8C8DFEA-D1BA-40A4-9E1C-84670D616C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C8DFEA-D1BA-40A4-9E1C-84670D616C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C8DFEA-D1BA-40A4-9E1C-84670D616C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -10,7 +10,15 @@ public class PasswordHash : ValueObject
     {
         AddNotifications(new Contract<PasswordHash>()
             .Requires()
-            .IsLowerThan(2,passwordHash.Length, nameof(passwordHash), "A senha deve ter no mínimo 3 caracteres")
+            .IsNotNull(passwordHash, nameof(passwordHash), "A senha não pode ser nula")
+        );
+        
+        if (!IsValid)
+            return;
+        
+        AddNotifications(new Contract<PasswordHash>()
+            .Requires()
+            .IsLowerThan(5,passwordHash.Length, nameof(passwordHash), "A senha deve ter no mínimo 5 caracteres")
             .IsGreaterThan(20,passwordHash.Length, nameof(passwordHash), "A senha deve ter no máximo 20 caracteres")
         );
         
