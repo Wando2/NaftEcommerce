@@ -1,4 +1,5 @@
 ﻿using Flunt.Notifications;
+using MediatR;
 using Naft.Domain.Commands;
 using Naft.Domain.Commands.Interfaces;
 using Naft.Domain.Entities;
@@ -8,7 +9,7 @@ using Naft.Domain.Utils;
 
 namespace Naft.Domain.Handlers;
 
-public class CreateOrderHandler : Notifiable<Notification>, IHandler<CreateOrderCommand>
+public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, ICommandResult>
 {
     private readonly IProductRepository _productrepository;
     private readonly IUserRepository _userRepository;
@@ -20,22 +21,21 @@ public class CreateOrderHandler : Notifiable<Notification>, IHandler<CreateOrder
         _repository = orderRepository;
     }
     
-    public ICommandResult Handle(CreateOrderCommand command)
+    public async Task<ICommandResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
     {
         // Fail Fast Validation
         command.Validate();
         if (!command.IsValid)
         {
-            AddNotifications(command);
             return new GenericCommandResult(false, "Pedido inválido", command.Notifications);
         }
         
         // Recupera o usuário
-        var buyer = _userRepository.GetByIdAsync(command.BuyerId).Result;
-        var seller = _userRepository.GetByIdAsync(command.SellerId).Result;
+        var buyer = await _userRepository.GetByIdAsync(command.BuyerId);
+        var seller = await _userRepository.GetByIdAsync(command.SellerId);
         
         // recupera os produtos
-        var products = _productrepository.GetByIdAsync(ExtractGuids.Extract(command.Items)).Result;
+        var products = await _productrepository.GetByIdAsync(ExtractGuids.Extract(command.Items));
         var productsList = products.ToList();
 
      
@@ -51,16 +51,16 @@ public class CreateOrderHandler : Notifiable<Notification>, IHandler<CreateOrder
 
         
         // Adiciona as notificações
-        AddNotifications(order.Notifications);
+        //AddNotifications(order.Notifications) as notificações já estão no command;
         
         // Verifica se deu tudo certo
-        if (!IsValid)
-            return new GenericCommandResult(false, "Falha ao gerar o pedido", Notifications);
+        if (!order.IsValid)
+            return new GenericCommandResult(false, "Falha ao gerar o pedido", order.Notifications);
         
         // Salva o pedido
-        _repository.Save(order);
+         await _repository.Save(order);
         
         // Retorna o resultado
-        return new GenericCommandResult(true, "Pedido salvo com sucesso");
+        return new GenericCommandResult(true, "Pedido salvo com sucesso", order);
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Flunt.Notifications;
 using Flunt.Validations;
+using MediatR;
 using Naft.Domain.Commands.Interfaces;
 using Naft.Domain.Entities;
 
 namespace Naft.Domain.Commands;
 
-public class CreateOrderCommand :Notifiable<Notification>, ICommand, ICommandResult
+public class CreateOrderCommand :Notifiable<Notification>, ICommand , IRequest<GenericCommandResult>
 {
     public CreateOrderCommand(Guid buyerId,Guid sellerId, IList<OrderItem> items)
     {
