@@ -1,12 +1,13 @@
 ﻿using Flunt.Notifications;
 using Flunt.Validations;
+using MediatR;
 using Naft.Domain.Commands.Interfaces;
 using Naft.Domain.Entities;
 using Naft.Domain.ValueObjects;
 
 namespace Naft.Domain.Commands;
 
-public class CreateUserCommand : Notifiable<Notification>, ICommand
+public class CreateUserCommand : Notifiable<Notification>, ICommand , IRequest<GenericCommandResult>
 {
     private Name Name { get; set; }
     private Email Email { get;  set; }

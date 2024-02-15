@@ -17,11 +17,6 @@ public class Product : Entity
         _categories = new List<Category>();
         Active = true;
         
-        
-        
-        
-        
-        
         AddNotifications(title, description, price, quantity, image, user);
     }
     

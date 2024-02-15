@@ -1,4 +1,5 @@
 ﻿using Flunt.Validations;
+using Naft.Domain.Entities;
 
 namespace Naft.Domain.ValueObjects;
 
@@ -13,34 +14,39 @@ public class Address : ValueObject
         State = state;
         Country = country;
         ZipCode = zipCode;
-        
+
+
         AddNotifications(new Contract<Address>()
-            .Requires()
-            .IsNotNullOrEmpty(Street, nameof(Street), "A Rua é obrigatória")
-            .IsLowerThan(2,Street.Length, nameof(Street), "A Rua deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(80,Street.Length, nameof(Street), "A Rua deve ter no máximo 80 caracteres")
-            .IsNotNullOrEmpty(Number, nameof(Number), "O Número é obrigatório")
-            .IsLowerThan(2,Number.Length, nameof(Number), "O Número deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(10,Number.Length, nameof(Number), "O Número deve ter no máximo 10 caracteres")
-            .IsNotNullOrEmpty(Neighborhood, nameof(Neighborhood), "O Bairro é obrigatório")
-            .IsLowerThan(2,Neighborhood.Length, nameof(Neighborhood), "O Bairro deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(80,Neighborhood.Length, nameof(Neighborhood), "O Bairro deve ter no máximo 80 caracteres")
-            .IsNotNullOrEmpty(City, nameof(City), "A Cidade é obrigatória")
-            .IsLowerThan(2,City.Length, nameof(City), "A Cidade deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(80,City.Length, nameof(City), "A Cidade deve ter no máximo 80 caracteres")
-            .IsNotNullOrEmpty(State, nameof(State), "O Estado é obrigatório")
-            .IsLowerThan(2,State.Length, nameof(State), "O Estado deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(80,State.Length, nameof(State), "O Estado deve ter no máximo 80 caracteres")
-            .IsNotNullOrEmpty(Country, nameof(Country), "O País é obrigatório")
-            .IsLowerThan(2,Country.Length, nameof(Country), "O País deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(80,Country.Length, nameof(Country), "O País deve ter no máximo 80 caracteres")
-            .IsNotNullOrEmpty(ZipCode, nameof(ZipCode), "O CEP é obrigatório")
-            .IsLowerThan(2,ZipCode.Length, nameof(ZipCode), "O CEP deve ter no mínimo 3 caracteres")
-            .IsGreaterThan(10,ZipCode.Length, nameof(ZipCode), "O CEP deve ter no máximo 10 caracteres")
-            
-            
+            .IsNotNullOrEmpty(street, "Address.street", "O nome da rua é obrigatório")
+            .IsNotNullOrEmpty(number, "Address.number", "O número é obrigatório")
+            .IsNotNullOrEmpty(neighborhood, "Address.neighborhood", "O bairro é obrigatório")
+            .IsNotNullOrEmpty(city, "Address.city", "A cidade é obrigatória")
+            .IsNotNullOrEmpty(state, "Address.state", "O estado é obrigatório")
+            .IsNotNullOrEmpty(country, "Address.country", "O país é obrigatório")
+            .IsNotNullOrEmpty(zipCode, "Address.zipCode", "O CEP é obrigatório")
         );
         
+        if (!IsValid)
+            return;
+        
+        AddNotifications(new Contract<Category>()
+            .Requires()
+            .IsLowerThan(2,street.Length, "Address.street", "O nome da rua deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,number.Length, "Address.number", "O número deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,neighborhood.Length, "Address.neighborhood", "O bairro deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,city.Length, "Address.city", "A cidade deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,state.Length, "Address.state", "O estado deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,country.Length, "Address.country", "O país deve ter pelo menos 3 caracteres")
+            .IsLowerThan(2,zipCode.Length, "Address.zipCode", "O CEP deve ter pelo menos 3 caracteres")
+            .IsGreaterThan(39,street.Length, "Address.street", "O nome da rua deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,number.Length, "Address.number", "O número deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,neighborhood.Length, "Address.neighborhood", "O bairro deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,city.Length, "Address.city", "A cidade deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,state.Length, "Address.state", "O estado deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,country.Length, "Address.country", "O país deve ter no máximo 40 caracteres")
+            .IsGreaterThan(39,zipCode.Length, "Address.zipCode", "O CEP deve ter no máximo 40 caracteres")
+        );
+            
     }
     
    
