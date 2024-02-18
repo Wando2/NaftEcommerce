@@ -19,6 +19,8 @@ public class UserTests
     }
     
     
+    
+    
     [Fact]
     public void ShouldBeInvalidWhenNameIsNull()
     {
