@@ -5818,34 +5818,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MegaJ\\.nuget\\packages\\": {}
+    "C:\\Users\\Wando\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Tests\\Naft.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Tests\\Naft.Tests.csproj",
       "projectName": "Naft.Tests",
-      "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Tests\\Naft.Tests.csproj",
-      "packagesPath": "C:\\Users\\MegaJ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Tests\\Naft.Tests.csproj",
+      "packagesPath": "C:\\Users\\Wando\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MegaJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Wando\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {
-              "projectPath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj"
+            "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {
+              "projectPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj"
             }
           }
         }
@@ -5896,12 +5894,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Wando\\.dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

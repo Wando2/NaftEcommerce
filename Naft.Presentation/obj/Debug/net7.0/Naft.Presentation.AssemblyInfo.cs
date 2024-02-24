@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Naft.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Naft.Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("Naft.Presentation")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Naft.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "dtWB+No7T6BmOtaRhLsu8AqMBw7ev9EKn2FrmxWtwPju5aaz5xmxTxIuCp2ex3ZQCm1kLrw8az5gIasJYZW1dA==",
+  "dgSpecHash": "pvQTptbm7v3MzIt9ki0tLxxEZG6rhmmApnUk/CAzB1NHb1DFiV90EZc64ezEkghx8U4EJh/ASvReAOjYhSWXQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MegaJ\\OneDrive\\Documentos\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MegaJ\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
-    "C:\\Users\\MegaJ\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
-    "C:\\Users\\MegaJ\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\MegaJ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\MegaJ\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512"
+    "C:\\Users\\Wando\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

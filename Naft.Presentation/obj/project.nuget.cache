@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AV4D2tPD+E4yv/haJKpyKtbwqjCdE4/7DcrKaDitN108jTnVZKEr2NCXT895PyEbXWASYAhyMjF57O6iyOjoWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\Naft.Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

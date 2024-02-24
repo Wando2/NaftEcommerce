@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {}
+    "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\Naft.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj": {
+    "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\Naft.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
-        "projectName": "Naft.Domain",
-        "projectPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\Naft.Presentation.csproj",
+        "projectName": "Naft.Presentation",
+        "projectPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\Naft.Presentation.csproj",
         "packagesPath": "C:\\Users\\Wando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Wando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,20 +37,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Flunt": {
-              "target": "Package",
-              "version": "[2.0.5, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.2.0, )"
-            },
-            "SecureIdentity": {
-              "target": "Package",
-              "version": "[1.0.4, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
