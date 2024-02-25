@@ -26,7 +26,7 @@ public class OrderItem : Entity
                 .IsGreaterThan(quantity, 0, "Quantity", "A quantidade deve ser maior que zero")
         );
 
-        // Assuming the rest of your logic here is correct
+     
         Product = product;
         Quantity = quantity;
         

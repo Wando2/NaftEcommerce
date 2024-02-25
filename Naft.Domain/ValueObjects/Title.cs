@@ -18,7 +18,7 @@ public class Title : ValueObject
         
         AddNotifications(new Contract<Notification>()
             .Requires()
-            .IsLowerThan(1,TitleName.Length, nameof(TitleName), "O título deve ter pelo menos 1 caractere")
+            .IsLowerThan(2,TitleName.Length, nameof(TitleName), "O título deve ter pelo menos 2 caractere")
             .IsGreaterThan(100,TitleName.Length, nameof(TitleName), " O título deve ter no máximo 100 caracteres")
             
         );

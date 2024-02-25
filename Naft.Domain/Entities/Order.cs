@@ -12,6 +12,7 @@ public class Order : Entity
         Date = DateTime.Now;
         Status = EOrderStatus.WaitingPayment;
         _Items = new List<OrderItem>();
+        
     }
     
     

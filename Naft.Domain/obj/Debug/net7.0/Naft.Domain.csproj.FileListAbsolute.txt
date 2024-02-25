@@ -10,3 +10,16 @@ C:\Users\MegaJ\OneDrive\Documentos\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Na
 C:\Users\MegaJ\OneDrive\Documentos\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\refint\Naft.Domain.dll
 C:\Users\MegaJ\OneDrive\Documentos\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.pdb
 C:\Users\MegaJ\OneDrive\Documentos\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\ref\Naft.Domain.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\bin\Debug\net7.0\Naft.Domain.deps.json
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\bin\Debug\net7.0\Naft.Domain.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\bin\Debug\net7.0\Naft.Domain.pdb
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.csproj.AssemblyReference.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.AssemblyInfoInputs.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.AssemblyInfo.cs
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.sourcelink.json
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\refint\Naft.Domain.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\Naft.Domain.pdb
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Domain\obj\Debug\net7.0\ref\Naft.Domain.dll

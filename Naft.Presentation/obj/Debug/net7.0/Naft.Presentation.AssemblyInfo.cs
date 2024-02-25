@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82701280851bc9e1d4499341bbc90e727506f187")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974e8d969469fc1ecea8b6158352a2363fe064cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Naft.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Naft.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,16 @@
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net7.0\Naft.Infra.deps.json
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net7.0\Naft.Infra.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net7.0\Naft.Infra.pdb
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net7.0\Naft.Domain.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net7.0\Naft.Domain.pdb
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.csproj.AssemblyReference.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.AssemblyInfoInputs.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.AssemblyInfo.cs
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.sourcelink.json
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.csproj.Up2Date
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\refint\Naft.Infra.dll
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\Naft.Infra.pdb
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net7.0\ref\Naft.Infra.dll

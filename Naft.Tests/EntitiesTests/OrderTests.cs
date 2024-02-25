@@ -1,6 +1,6 @@
 ﻿namespace Naft.Tests;
 
-public class ProductTests
+public class OrderTests
 {
     
 }
