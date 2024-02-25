@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Tests", "Naft.Tests\Na
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Infra", "Naft.Infra\Naft.Infra.csproj", "{8C22151C-2992-49D9-94E3-50F5DAB6F361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Presentation", "Naft.Presentation\Naft.Presentation.csproj", "{074CC504-A254-4BD4-A7DC-0EDC3864E1EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naft.Presentation", "Naft.Presentation\Naft.Presentation.csproj", "{11FEFA0F-6200-4191-B784-C83133B7EC72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{8C22151C-2992-49D9-94E3-50F5DAB6F361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C22151C-2992-49D9-94E3-50F5DAB6F361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C22151C-2992-49D9-94E3-50F5DAB6F361}.Release|Any CPU.Build.0 = Release|Any CPU
-		{074CC504-A254-4BD4-A7DC-0EDC3864E1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{074CC504-A254-4BD4-A7DC-0EDC3864E1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{074CC504-A254-4BD4-A7DC-0EDC3864E1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{074CC504-A254-4BD4-A7DC-0EDC3864E1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FEFA0F-6200-4191-B784-C83133B7EC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FEFA0F-6200-4191-B784-C83133B7EC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FEFA0F-6200-4191-B784-C83133B7EC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FEFA0F-6200-4191-B784-C83133B7EC72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

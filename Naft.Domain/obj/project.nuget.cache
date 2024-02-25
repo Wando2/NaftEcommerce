@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pvQTptbm7v3MzIt9ki0tLxxEZG6rhmmApnUk/CAzB1NHb1DFiV90EZc64ezEkghx8U4EJh/ASvReAOjYhSWXQA==",
+  "dgSpecHash": "GmSZlN2xatr86Kn8dMRbNkcn0IaH5lWX/EYU8Xl4gYzzpAb6Nrh835LAmDjHq66ltdeipRJn/vYSP/XeHIo73A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Wando\\Documents\\GitHub\\NaftEcommerce\\Naft.Domain\\Naft.Domain.csproj",
   "expectedPackageFiles": [
@@ -8,10 +8,7 @@
     "C:\\Users\\Wando\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Wando\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Wando\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Wando\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
-    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Wando\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+    "C:\\Users\\Wando\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }
