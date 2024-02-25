@@ -27,7 +27,7 @@ app.Run();
 
 void ConfigureServices(IServiceCollection services)
 {
-  //  services.AddControllers();
+  
     services.AddSwaggerGen();
     services.AddEndpointsApiExplorer();
 }
@@ -51,7 +51,7 @@ void ConfigureMvc(WebApplicationBuilder builder)
         })
         .AddJsonOptions(x =>
         {
-            x.JsonSerializerOptions.IgnoreNullValues = true;
+            x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
             x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         });
 }
