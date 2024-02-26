@@ -13,6 +13,7 @@ public class Order : Entity
         Status = EOrderStatus.WaitingPayment;
         _Items = new List<OrderItem>();
         
+        
     }
     
     
