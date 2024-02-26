@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974e8d969469fc1ecea8b6158352a2363fe064cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ca8dac04fa8a5097930110001d3b5b4854d3d22")]
 [assembly: System.Reflection.AssemblyProductAttribute("Naft.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Naft.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

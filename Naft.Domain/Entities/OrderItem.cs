@@ -28,6 +28,7 @@ public class OrderItem : Entity
 
      
         Product = product;
+        Price = product.Price.Value;
         Quantity = quantity;
         
         

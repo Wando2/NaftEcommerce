@@ -7,6 +7,12 @@ public class Order : Entity
     
     public Order(User seller, User buyer)
     {
+        if (seller == null || buyer == null)
+            AddNotification("Order", "Seller or Buyer is null");
+        
+        if (!IsValid)
+            return;
+        
         Seller = seller;
         Buyer = buyer;
         Date = DateTime.Now;
@@ -26,7 +32,7 @@ public class Order : Entity
 
     public Guid Number => new();
     
-    private decimal Total() => Items.Sum(item => item.Total());
+    public decimal Total() => Items.Sum(item => item.Total());
  
     
     public void AddItem(Product product, int quantity)

@@ -27,4 +27,8 @@
       <ProjectReference Include="..\Naft.Domain\Naft.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="HandlersTests\" />
+    </ItemGroup>
+
 </Project>

@@ -34,5 +34,12 @@ public class OrderItemTests
         var orderItem = new OrderItem(_product, _quantity);
         Assert.True(orderItem.IsValid);
     }
+    
+    [Fact(DisplayName = "Total should be 20 when product price is 10 and quantity is 2")]
+    public void TotalShouldBe20WhenProductPriceIs10AndQuantityIs2()
+    {
+        var orderItem = new OrderItem(_product, 2);
+        Assert.Equal(20, orderItem.Total());
+    }
         
 }

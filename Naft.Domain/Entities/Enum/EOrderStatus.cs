@@ -5,5 +5,6 @@ public enum EOrderStatus
 {
     WaitingPayment = 1,
     WaitingDelivery = 2,
-    Canceled = 3
+    Canceled = 3,
+    Finished = 4
 }
