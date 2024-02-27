@@ -7,11 +7,6 @@ public class Order : Entity
     
     public Order(User seller, User buyer)
     {
-        if (seller == null || buyer == null)
-            AddNotification("Order", "Seller or Buyer is null");
-        
-        if (!IsValid)
-            return;
         
         Seller = seller;
         Buyer = buyer;
