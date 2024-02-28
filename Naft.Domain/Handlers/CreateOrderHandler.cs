@@ -9,7 +9,7 @@ using Naft.Domain.Utils;
 
 namespace Naft.Domain.Handlers;
 
-public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, ICommandResult>
+public class CreateOrderHandler :Notifiable<Notification>, IRequestHandler<CreateOrderCommand, GenericCommandResult>
 {
     private readonly IProductRepository _productrepository;
     private readonly IUserRepository _userRepository;
@@ -21,7 +21,7 @@ public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, ICommandRe
         _repository = orderRepository;
     }
     
-    public async Task<ICommandResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
+    public async Task<GenericCommandResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
     {
         // Fail Fast Validation
         command.Validate();
