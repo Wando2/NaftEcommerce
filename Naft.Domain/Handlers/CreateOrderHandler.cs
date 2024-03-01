@@ -54,7 +54,7 @@ public class CreateOrderHandler :Notifiable<Notification>, IRequestHandler<Creat
         //AddNotifications(order.Notifications) as notificações já estão no command;
         
         // Verifica se deu tudo certo
-        if (!order.IsValid)
+        if (!order.IsValid || !order.HasItems)
             return new GenericCommandResult(false, "Falha ao gerar o pedido", order.Notifications);
         
         // Salva o pedido

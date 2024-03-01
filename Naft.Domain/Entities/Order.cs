@@ -14,6 +14,8 @@ public class Order : Entity
         Status = EOrderStatus.WaitingPayment;
         _Items = new List<OrderItem>();
         
+        AddNotifications(seller, buyer);
+        
         
     }
     
@@ -50,5 +52,12 @@ public class Order : Entity
     {
         Status = EOrderStatus.Canceled;
     }
+    
+    public void Deliver()
+    {
+        Status = EOrderStatus.Finished;
+    }
+    
+    public bool HasItems => Items.Any();
     
 }

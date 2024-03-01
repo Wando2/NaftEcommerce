@@ -8,6 +8,7 @@
       &lt;TestId&gt;xUnit::5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F::net7.0::Naft.Tests.OrderItemTests&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F::net7.0::Naft.Tests.OrderTests&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F::net7.0::Naft.Tests.HandlersTests.CreateOrderHandlerTests.ShouldBeValidWhenAllDataIsValid&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F::net7.0::Naft.Tests.HandlersTests.CreateOrderHandlerTests&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;5E2955DC-A7D6-41D5-9B4A-60B9CA9F9B3F/d:EntitiesTests/f:ProductTests.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
