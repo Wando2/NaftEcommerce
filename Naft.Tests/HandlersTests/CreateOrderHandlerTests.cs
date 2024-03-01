@@ -2,89 +2,87 @@
 using Naft.Domain.Commands;
 using Naft.Domain.Handlers;
 using Naft.Domain.Repositories;
+using Xunit;
 
 namespace Naft.Tests.HandlersTests;
 
 public class CreateOrderHandlerTests
 {
-    private readonly Mock<IProductRepository> _productRepository;
-    private readonly Mock<IUserRepository> _userRepository;
-    private readonly Mock<IOrderRepository> _orderRepository;
+    private readonly Mock<IProductRepository> _productRepository = new();
+    private readonly Mock<IUserRepository> _userRepository = new();
+    private readonly Mock<IOrderRepository> _orderRepository = new();
+    private readonly CreateOrderHandler _handler;
     private readonly User _buyer;
     private readonly User _seller;
     private readonly Product _product1;
-    private List<Product> _testProducts;
-    
+    private readonly Guid _sellerId = Guid.Parse("00000000-0000-0000-0000-000000000001");
+    private readonly Guid _buyerId = Guid.Parse("00000000-0000-0000-0000-000000000002");
+
     public CreateOrderHandlerTests()
     {
-        _productRepository = new Mock<IProductRepository>();
-        _userRepository = new Mock<IUserRepository>();
-        _orderRepository = new Mock<IOrderRepository>();
-        
-         _buyer = new User(new Name("John","cena"), new Email("John@gmail.com"), new PasswordHash("123456"));
-         _seller = new User(new Name("Gabriel","Barbosa"), new Email("gabigol@gmail.com"), new PasswordHash("123456"));
-         _product1 = new Product(new Title("Monkey"), new Description("Description"), new Price(10), new Quantity(1),
-             null, _seller);
+        // Common setup for all tests goes here
+        _buyer = new User(new Name("John", "Cena"), new Email("John@gmail.com"), new PasswordHash("123456"));
+        _seller = new User(new Name("Gabriel", "Barbosa"), new Email("gabigol@gmail.com"), new PasswordHash("123456"));
+        _product1 = new Product(new Title("Monkey"), new Description("Description"), new Price(10), new Quantity(1), null, _seller);
 
-        _testProducts = new List<Product>
+        var testProducts = new List<Product>
         {
             _product1
         };
-    }
-    
-    [Fact]
-    public void ShoulReturnSucessWhenAllDataIsValid()
-    {
-        // Set up the mock
+
         _productRepository
             .Setup(repo => repo.GetByIdAsync(It.IsAny<IEnumerable<Guid>>()))
-            .ReturnsAsync((IEnumerable<Guid> ids) => _testProducts.Where(p => ids.Contains(p.Id)));
-     
-     _userRepository.Setup(x => x.GetByIdAsync(It.Is<Guid>(id => id == Guid.Parse("00000000-0000-0000-0000-000000000001"))))
-         .ReturnsAsync(_seller); // Returns _seller when Guid is 00000000-0000-0000-0000-000000000001
-     _userRepository.Setup(x => x.GetByIdAsync(It.Is<Guid>(id => id == Guid.Parse("00000000-0000-0000-0000-000000000002"))))
-         .ReturnsAsync(_buyer); // Returns _buyer when Guid is 00000000-0000-0000-0000-000000000002
-        
-     var command = new CreateOrderCommand(Guid.Parse("00000000-0000-0000-0000-000000000002"), Guid.Parse("00000000-0000-0000-0000-000000000001"), new List<OrderItem>
-     {
-         new OrderItem(_product1, 1)
-     });
-     
-     var handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
-     
-     var result = handler.Handle(command, CancellationToken.None);
-     
+            .ReturnsAsync((IEnumerable<Guid> ids) => testProducts.Where(p => ids.Contains(p.Id)));
+
+        _userRepository.Setup(x => x.GetByIdAsync(_sellerId))
+            .ReturnsAsync(_seller); // Returns _seller when correct Guid is provided
+
+        _userRepository.Setup(x => x.GetByIdAsync(_buyerId))
+            .ReturnsAsync(_buyer); // Returns _buyer when correct Guid is provided
+
+        _handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
+    }
+
+    [Fact]
+    public void ShouldReturnSucessWhenAllDataIsValid()
+    {
+        // Arrange
+        var command = new CreateOrderCommand(_buyerId, _sellerId, new List<OrderItem>
+        {
+            new OrderItem(_product1, 1)
+        });
+
+        // Act
+        var result = _handler.Handle(command, CancellationToken.None);
+
+        // Assert
         Assert.True(result.Result.Success);
-     
     }
     
     [Fact(DisplayName = "Should be invalid when command is invalid")]
     public void ShouldBeInvalidWhenCommandIsInvalid()
     {
+        // Arrange
         var command = new CreateOrderCommand(Guid.Empty, Guid.Empty, new List<OrderItem>());
-        var handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
-        var result = handler.Handle(command, CancellationToken.None);
+
+        // Act
+        var result = _handler.Handle(command, CancellationToken.None);
+
+        // Assert
         Assert.False(result.Result.Success);
     }
     
     [Fact(DisplayName = "Should be invalid when the product is not found")]
     public void ShouldBeInvalidWhenTheProductIsNotFound()
     {
-        _productRepository
-            .Setup(repo => repo.GetByIdAsync(It.IsAny<IEnumerable<Guid>>()))
-            .ReturnsAsync((IEnumerable<Guid> ids) => _testProducts.Where(p => ids.Contains(p.Id)));
-        
-        var command = new CreateOrderCommand(Guid.Parse("00000000-0000-0000-0000-000000000002"), Guid.Parse("00000000-0000-0000-0000-000000000001"), new List<OrderItem>
+        // Act
+        var command = new CreateOrderCommand(_buyerId, _sellerId, new List<OrderItem>
         {
-            new OrderItem(new Product(new Title("Monkey"), new Description("Description"), new Price(10), new Quantity(1), null, _seller), 1)
+            new OrderItem(new Product(new Title("Non-existent"), new Description("Description"), new Price(10), new Quantity(1), null, _seller), 1)
         });
-        
-        var handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
-        var result = handler.Handle(command, CancellationToken.None);
+
+        // Assert
+        var result = _handler.Handle(command, CancellationToken.None);
         Assert.False(result.Result.Success);
     }
-    
-   
-    
-    
 }

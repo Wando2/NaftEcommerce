@@ -13,6 +13,7 @@ public class CreateOrderCommand :Notifiable<Notification>, ICommand , IRequest<G
         BuyerId = buyerId;
         SellerId = sellerId;
         Items = items;
+        
     }
     
    

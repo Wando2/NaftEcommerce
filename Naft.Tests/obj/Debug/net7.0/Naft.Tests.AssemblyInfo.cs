@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23cb7151dbf82a5066aee690c35c0aaf39e51098")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f373df599b3adbf1d679428e668389ed535c485")]
 [assembly: System.Reflection.AssemblyProductAttribute("Naft.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Naft.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
