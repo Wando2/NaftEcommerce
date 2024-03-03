@@ -4,6 +4,7 @@ using Naft.Domain.Handlers;
 using Naft.Domain.Repositories;
 using Xunit;
 
+
 namespace Naft.Tests.HandlersTests;
 
 public class CreateOrderHandlerTests
@@ -43,6 +44,8 @@ public class CreateOrderHandlerTests
         _handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
     }
 
+    
+    
     [Fact]
     public void ShouldReturnSucessWhenAllDataIsValid()
     {

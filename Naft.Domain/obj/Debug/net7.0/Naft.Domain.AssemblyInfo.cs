@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Naft.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+916fef2a0ee39fd1ff0dccaa3a1296e55502b8b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f0cb6e72e62bc7353f2ec142c40c5c35dc0ec2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Naft.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Naft.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
