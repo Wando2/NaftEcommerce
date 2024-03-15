@@ -23,6 +23,6 @@ public class Description : ValueObject
         );
     }
     
-    public string DescriptionText { get; private set; }
+    public string DescriptionText { get; private init; }
     
 }

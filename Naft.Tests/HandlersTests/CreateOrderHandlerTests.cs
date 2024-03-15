@@ -2,7 +2,7 @@
 using Naft.Domain.Commands;
 using Naft.Domain.Handlers;
 using Naft.Domain.Repositories;
-using Xunit;
+
 
 
 namespace Naft.Tests.HandlersTests;
@@ -13,7 +13,6 @@ public class CreateOrderHandlerTests
     private readonly Mock<IUserRepository> _userRepository = new();
     private readonly Mock<IOrderRepository> _orderRepository = new();
     private readonly CreateOrderHandler _handler;
-    private readonly User _buyer;
     private readonly User _seller;
     private readonly Product _product1;
     private readonly Guid _sellerId = Guid.Parse("00000000-0000-0000-0000-000000000001");
@@ -22,7 +21,7 @@ public class CreateOrderHandlerTests
     public CreateOrderHandlerTests()
     {
         // Common setup for all tests goes here
-        _buyer = new User(new Name("John", "Cena"), new Email("John@gmail.com"), new PasswordHash("123456"));
+        var buyer = new User(new Name("John", "Cena"), new Email("John@gmail.com"), new PasswordHash("123456"));
         _seller = new User(new Name("Gabriel", "Barbosa"), new Email("gabigol@gmail.com"), new PasswordHash("123456"));
         _product1 = new Product(new Title("Monkey"), new Description("Description"), new Price(10), new Quantity(1), null, _seller);
 
@@ -39,7 +38,7 @@ public class CreateOrderHandlerTests
             .ReturnsAsync(_seller); // Returns _seller when correct Guid is provided
 
         _userRepository.Setup(x => x.GetByIdAsync(_buyerId))
-            .ReturnsAsync(_buyer); // Returns _buyer when correct Guid is provided
+            .ReturnsAsync(buyer); // Returns _buyer when correct Guid is provided
 
         _handler = new CreateOrderHandler(_productRepository.Object, _userRepository.Object, _orderRepository.Object);
     }
@@ -47,7 +46,7 @@ public class CreateOrderHandlerTests
     
     
     [Fact]
-    public void ShouldReturnSucessWhenAllDataIsValid()
+    public void ShouldReturnSuccessWhenAllDataIsValid()
     {
         // Arrange
         var command = new CreateOrderCommand(_buyerId, _sellerId, new List<OrderItem>
