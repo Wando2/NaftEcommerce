@@ -62,9 +62,6 @@ public class ProductMap : IEntityTypeConfiguration<Product>
             .WithMany(s => s.Products)
             .HasForeignKey("SellerId");
 
-        builder.HasMany(p => p.Categories)
-            .WithMany(c => c.Products)
-            .UsingEntity(j => j.ToTable("ProductCategories"));
         
         builder.HasMany(p => p.Categories)
             .WithMany(c => c.Products)

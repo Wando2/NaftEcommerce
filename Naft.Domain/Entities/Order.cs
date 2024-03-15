@@ -16,7 +16,6 @@ public class Order : Entity
         
         AddNotifications(seller, buyer);
         
-        
     }
     
     
