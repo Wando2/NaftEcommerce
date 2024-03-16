@@ -12,10 +12,6 @@ public class OrderMap : IEntityTypeConfiguration<Order>
 
         builder.HasKey(o => o.Id);
         
-        builder.Property(o => o.Id)
-            .ValueGeneratedOnAdd()
-            .UseIdentityColumn();
-        
         builder.Property(o => o.Number)
             .HasColumnName("OrderNumber")
             .HasMaxLength(100)

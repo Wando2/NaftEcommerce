@@ -4,6 +4,11 @@ namespace Naft.Domain.ValueObjects;
 
 public class Name : ValueObject
 {
+   
+   
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    
     public Name(string firstName, string lastName)
     {
         AddNotifications(new Contract<Name>()
@@ -28,7 +33,8 @@ public class Name : ValueObject
         );
         
     }
-   
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    
+    public Name()
+    {
+    }
 }

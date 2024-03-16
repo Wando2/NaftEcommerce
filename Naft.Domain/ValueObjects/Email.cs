@@ -14,6 +14,9 @@ public class Email : ValueObject
             .IsEmail(EmailAddress, nameof(EmailAddress), "Email inválido")
         );
     }
+    public Email()
+    {
+    }
     
     public string EmailAddress { get; private set; }
     

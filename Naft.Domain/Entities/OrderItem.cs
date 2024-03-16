@@ -5,7 +5,10 @@ using Flunt.Validations;
 
 public class OrderItem : Entity
 {
-    
+    public OrderItem()
+    {
+    }
+
     public OrderItem(Product product, int quantity)
     {
         

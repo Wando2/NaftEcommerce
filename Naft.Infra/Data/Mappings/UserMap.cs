@@ -12,9 +12,8 @@ public class UserMap : IEntityTypeConfiguration<User>
 
         builder.HasKey(x => x.Id);
 
-        builder.Property(x => x.Id)
-            .ValueGeneratedOnAdd()
-            .UseIdentityColumn(1, 1);
+        builder.Property(x => x.Id);
+           
         
             builder.OwnsOne(u => u.Name, name =>
             {
@@ -58,9 +57,11 @@ public class UserMap : IEntityTypeConfiguration<User>
                 .HasForeignKey("UserId")
                 .OnDelete(DeleteBehavior.Cascade);
            
-            builder
-                .HasIndex(x => x.Slug, "IX_User_Slug")
-                .IsUnique();
+            
+            builder.OwnsOne(u => u.Slug)
+                .HasIndex(s => s.SlugText)
+                .IsUnique()
+                .HasDatabaseName("IX_User_Slug");;
             
             
     }

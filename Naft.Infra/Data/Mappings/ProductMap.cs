@@ -11,10 +11,7 @@ public class ProductMap : IEntityTypeConfiguration<Product>
         builder.ToTable("Products");
 
         builder.HasKey(p => p.Id);
-
-        builder.Property(p => p.Id)
-            .ValueGeneratedOnAdd()
-            .UseIdentityColumn();
+        
 
         // Title Value Object
         builder.OwnsOne(p => p.Title, title =>
@@ -63,21 +60,17 @@ public class ProductMap : IEntityTypeConfiguration<Product>
             .HasForeignKey("SellerId");
 
         
+        // In ProductMap
         builder.HasMany(p => p.Categories)
             .WithMany(c => c.Products)
             .UsingEntity<Dictionary<string, object>>(
-                "ProductCategory", // Name of the join table
-                product => product.HasOne<Category>()
-                    .WithMany()
-                    .HasForeignKey("CategoryId")
-                    .OnDelete(DeleteBehavior.Cascade), // Configure cascade delete as per your domain requirements
-                category => category.HasOne<Product>()
-                    .WithMany()
-                    .HasForeignKey("ProductId")
-                    .OnDelete(DeleteBehavior.Cascade),
+                "ProductCategory",
+                product => product.HasOne<Category>().WithMany().HasForeignKey("CategoryId"),
+                category => category.HasOne<Product>().WithMany().HasForeignKey("ProductId"),
                 joinEntity =>
                 {
-                    joinEntity.HasKey("ProductId", "CategoryId"); // Composite primary key for the join table
+                    joinEntity.HasKey("ProductId", "CategoryId");
                 });
+
     }
 }

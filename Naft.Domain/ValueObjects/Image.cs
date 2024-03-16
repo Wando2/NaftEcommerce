@@ -7,5 +7,8 @@ public class Image : ValueObject
         Url = url;
     }
     
+    public Image()
+    {
+    }
     public string Url { get; private set; }
 }

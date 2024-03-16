@@ -6,6 +6,10 @@ namespace Naft.Domain.ValueObjects;
 public class PasswordHash : ValueObject
 {
     
+   
+    
+    public string PasswordHashText { get; private set; }
+    
     public PasswordHash(string passwordHash)
     {
         AddNotifications(new Contract<PasswordHash>()
@@ -24,7 +28,7 @@ public class PasswordHash : ValueObject
         
         PasswordHashText =  PasswordHasher.Hash(passwordHash);
     }
-    
-    public string PasswordHashText { get; private set; }
-    
+    public PasswordHash()
+    {
+    }
 }

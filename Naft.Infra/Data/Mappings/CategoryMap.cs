@@ -11,11 +11,8 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
         builder.ToTable("Categories");
 
         builder.HasKey(c => c.Id);
-
-        builder.Property(c => c.Id)
-            .ValueGeneratedOnAdd()
-            .UseIdentityColumn();
-
+        
+        
         builder.Property(c => c.Name)
             .HasColumnName("Name")
             .HasMaxLength(100)
@@ -26,9 +23,5 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
             .HasMaxLength(500)
             .IsRequired();
 
-        builder.HasMany(c => c.Products)
-            .WithOne()
-            .HasForeignKey("CategoryId")
-            .OnDelete(DeleteBehavior.Cascade);
     }
 }

@@ -7,5 +7,8 @@ public class Slug
         SlugText = slug;
     }
     
+    public Slug()
+    {
+    }
     public string SlugText { get; private set; }
 }

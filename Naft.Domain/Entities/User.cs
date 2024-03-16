@@ -25,6 +25,10 @@ public class User : Entity
         AddNotifications(name, email, password);
     }
     
+    public User()
+    {
+    }
+    
     public void AddProduct(Product product)
     {
         _products.Add(product);

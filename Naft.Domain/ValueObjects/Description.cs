@@ -22,6 +22,9 @@ public class Description : ValueObject
             .IsGreaterThan(1000,DescriptionText.Length, nameof(DescriptionText), " A descrição deve ter no máximo 1000 caracteres")
         );
     }
+    public Description()
+    {
+    }
     
     public string DescriptionText { get; private init; }
     

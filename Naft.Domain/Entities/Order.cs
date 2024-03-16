@@ -4,7 +4,19 @@ namespace Naft.Domain.Entities;
 
 public class Order : Entity
 {
+    public User Seller { get; private set; }
+    public User Buyer { get; private set; }
+    public DateTime Date { get; private set; }
+    public EOrderStatus Status { get; private set; }
+    public IList<OrderItem> _Items { get; private set; }
+    private IEnumerable<OrderItem> Items => _Items;
+
+    public Guid Number => new();
     
+    public Order()
+    {
+    }
+
     public Order(User seller, User buyer)
     {
         
@@ -17,16 +29,7 @@ public class Order : Entity
         AddNotifications(seller, buyer);
         
     }
-    
-    
-    public User Seller { get; private set; }
-    public User Buyer { get; private set; }
-    public DateTime Date { get; private set; }
-    public EOrderStatus Status { get; private set; }
-    public IList<OrderItem> _Items { get; private set; }
-    private IEnumerable<OrderItem> Items => _Items;
 
-    public Guid Number => new();
     
     public decimal Total() => Items.Sum(item => item.Total());
  
