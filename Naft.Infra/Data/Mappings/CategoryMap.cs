@@ -12,16 +12,11 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
 
         builder.HasKey(c => c.Id);
         
-        
         builder.Property(c => c.Name)
             .HasColumnName("Name")
             .HasMaxLength(100)
             .IsRequired();
 
-        builder.Property(c => c.Description)
-            .HasColumnName("Description")
-            .HasMaxLength(500)
-            .IsRequired();
-
+        
     }
 }

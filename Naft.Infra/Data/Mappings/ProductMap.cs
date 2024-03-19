@@ -26,7 +26,7 @@ public class ProductMap : IEntityTypeConfiguration<Product>
         builder.OwnsOne(p => p.Description, description =>
         {
             description.Property(d => d.DescriptionText)
-                .HasColumnName("Description")
+                .HasColumnName("ProductDescription")
                 .HasMaxLength(1000)
                 .IsRequired();
         });

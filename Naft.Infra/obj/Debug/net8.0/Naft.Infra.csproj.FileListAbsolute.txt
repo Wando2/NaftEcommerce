@@ -1,4 +1,5 @@
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Infra.deps.json
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Infra.runtimeconfig.json
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Infra.dll
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Infra.pdb
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Domain.dll
@@ -13,6 +14,5 @@ C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\Naft.I
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\Naft.Infra.dll
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\refint\Naft.Infra.dll
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\Naft.Infra.pdb
-C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\ref\Naft.Infra.dll
-C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\bin\Debug\net8.0\Naft.Infra.runtimeconfig.json
 C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\Naft.Infra.genruntimeconfig.cache
+C:\Users\Wando\Documents\GitHub\NaftEcommerce\Naft.Infra\obj\Debug\net8.0\ref\Naft.Infra.dll

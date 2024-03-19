@@ -44,6 +44,20 @@ public class Product : Entity
         AddNotifications(title, description, price, quantity, user);
     }
     
+    public Product(string title, string description, decimal price, int quantity, string imageUrl, User user)
+    {
+        Title = new Title(title);
+        Description = new Description(description);
+        Price = new Price(price);
+        Quantity = new Quantity(quantity);
+        Image = new Image(imageUrl);
+        Seller = user;
+        _categories = new List<Category>();
+        Active = true;
+        
+        AddNotifications(Title, Description, Price, Quantity, Image, Seller);
+    }
+    
     public bool AddCategory(Category category)
     {
         if (_categories.Contains(category))
